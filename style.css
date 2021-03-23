@@ -11,79 +11,78 @@ body {
   padding: 0;
 }
 
-h1 {
-  margin: 0;
-  margin-bottom: 48px;
-  line-height: 2rem;
+body {
+  background-color: hsl(0deg, 0%, 100%);
 }
 
-h2 {
-  display: inline-block;
-  font-size: 1.5em;
-  margin-block-start: 0;
-  margin-block-end: 0;
-  margin-inline-start: 0;
-  margin-inline-end: 0;
-  font-weight: bold;
+h1, h2, h3 {
+  margin: 0;
+}
+
+html {
+  font-size: 18px;
 }
 
 p {
+
   line-height: 2rem;
 }
 
-.card p {
-  line-height: 1.75rem;
+header {
+  border-bottom: solid 8px hsl(0deg, 0%, 40%);
 }
 
-div.max-width-wrapper {
-  background-color: hsl(0deg, 0%, 100%);
-  padding: 64px 0;
-  border-bottom: solid 8px hsl(0deg, 0%, 40%);
+.max-width-wrapper {
+  max-width: 800px;
+  margin: 0 auto;
+  padding: 0 24px 0 24px;
 }
 
 .intro-chunk {
-  max-width: 700px;
-  /* min-width: 600px; */
-  /* width: min-content; */
-  margin-left: auto;
-  margin-right: auto;
-  padding-left: 24px;
-  padding-right: 32px;
+  padding: 96px 0;
+  max-width: 400px;
 }
 
 .intro-chunk p {
-  font-size: 1.5rem;
-  max-width: 400px;
-  margin-right: auto;
-}
-
-section.max-width-wrapper {
-  background-color: hsl(0deg, 0%, 60%);
-  padding: 80px 0;
-}
-
-.card {
-  max-width: 700px;
-  margin-left: auto;
-  margin-right: auto;
-  background-color: hsl(0deg, 0%, 100%);
-  padding: 8px 32px 8px 24px;
-  border-bottom: solid 8px hsl(0deg, 0%, 40%);
-}
-
-.card p {
   font-size: 1.25rem;
 }
 
-.indented-heading {
-  /* width: fit-content; */
-  padding: 24px 40px;
-  margin-left: -40px;
-  background-color: hsl(45deg, 100%, 50%);
-  border-bottom: solid 8px hsl(45deg, 100%, 40%);
+.intro-chunk.title {
+  font-size: 2rem;
+  margin-bottom: 32px;
 }
 
-p strong {
+main {
+  background-color: hsl(0deg, 0%, 60%);
+  padding: 96px 0;
+}
+
+.card {
+  background-color: hsl(0deg, 0%, 100%);
+  border-bottom: solid 8px hsl(0deg, 0%, 40%);
+  padding: 24px;
+  padding-right: 32px;
+  margin: -24px;
+}
+
+.card p {
+  line-height: 1.4;
+}
+
+.card p:last-child {
+  margin-bottom: 0;
+}
+
+.indented-heading {
+  background-color: hsl(45deg, 100%, 50%);
+  border-bottom: solid 8px hsl(45deg, 100%, 40%);
+  margin-left: -32px;
+  margin-top: -16px;
+  padding: 16px 32px;
+  width: fit-content;
+}
+
+.intro-chunk strong {
   color: hsl(160deg, 100%, 30%);
 }
 /* Add styles here! */
